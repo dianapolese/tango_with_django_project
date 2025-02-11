@@ -1,12 +1,7 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
-
 from rango.models import Category, Page
-
 from rango.forms import CategoryForm, PageForm, UserForm, UserProfileForm
-
-from django.shortcuts import redirect
 from django.urls import reverse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
